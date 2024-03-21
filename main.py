@@ -107,11 +107,11 @@ async def process_age_sent(message: Message, state: FSMContext):
     await state.update_data(age=message.text)
     # Создаем объекты инлайн-кнопок
     male_button = InlineKeyboardButton(
-        text='Мужской',
+        text='Мужской ♂',
         callback_data='male'
     )
     female_button = InlineKeyboardButton(
-        text='Женский',
+        text='Женский ♀',
         callback_data='female'
     )
     undefined_button = InlineKeyboardButton(
